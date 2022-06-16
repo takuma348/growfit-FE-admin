@@ -11,7 +11,10 @@ export default {
       { hid: 'description', name: 'description', content: '' },
       { name: 'format-detection', content: 'telephone=no' },
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    link: [
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/icon?family=Material+Icons' }
+    ],
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
@@ -30,6 +33,10 @@ export default {
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
   ],
+
+  tailwindcss: {
+    configPath: '~~/tailwind.config.js'
+  },
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
