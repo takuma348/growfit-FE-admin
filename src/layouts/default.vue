@@ -6,11 +6,19 @@
         <span class="block text-xs whitespace-nowrap">コンテンツ</span>
         <div class="h-0 w-full ml-2 border-t border-dashed"></div>
       </div>
-      <div class="flex items-center w-full mt-5 p-4 bg-primary rounded-lg">
+
+      <NuxtLink class="flex items-center w-full mt-5 p-4 rounded-lg" :class="{ 'bg-primary': $route.name === 'news' }"
+        to="/news">
         <span class="material-icons block">article</span>
         <span class="block ml-4">ニュース</span>
-      </div>
+      </NuxtLink>
+      <NuxtLink class="flex items-center w-full mt-1 p-4 rounded-lg" :class="{ 'bg-primary': $route.name === 'sample' }"
+        to="/sample">
+        <span class="material-icons block">face</span>
+        <span class="block ml-4">サンプル</span>
+      </NuxtLink>
     </div>
+
     <main>
       <Nuxt />
     </main>
