@@ -1,0 +1,3 @@
+<template>
+  <PagesNews></PagesNews>
+</template>
